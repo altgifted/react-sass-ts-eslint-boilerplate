@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-sw.js');
 
 /* eslint-disable no-undef */
@@ -100,5 +101,6 @@ if (workbox) {
 
   workbox.routing.registerRoute(new RegExp('/.*'), new workbox.strategies.NetworkFirst({}), 'GET');
 } else {
+  // eslint-disable-next-line no-console
   console.log(`Boo! Workbox didn't load 😬`);
 }

@@ -15,12 +15,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(j|t)sx?$/,
+        test: /\.[jt]sx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
       {
-        test: /\.(j|t)s?$/,
+        test: /\.[jt]s?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
