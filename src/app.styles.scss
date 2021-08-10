@@ -1,0 +1,21 @@
+.app {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+.header {
+  padding: 20px;
+  background-color: #ea9f4b;
+}
+
+.content {
+  padding: 20px;
+  background-color: #865a27;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #bd8e57;
+}

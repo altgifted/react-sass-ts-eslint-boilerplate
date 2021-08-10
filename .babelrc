@@ -1,0 +1,37 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "Chrome >= 60",
+            "Safari >= 10.1",
+            "iOS >= 10.3",
+            "Firefox >= 54",
+            "Edge >= 15"
+          ]
+        },
+        "modules": false,
+        "useBuiltIns": "entry",
+        "corejs": "3.0.0"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    ["@babel/plugin-transform-runtime",
+      {
+        "regenerator": true,
+        "runtimeHelpers": true
+      }
+    ],
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-export-namespace-from"
+  ]
+}
